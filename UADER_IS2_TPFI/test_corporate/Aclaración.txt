@@ -1,0 +1,1 @@
+Se separa este test de la carpeta principal porque sino el "pytest" falla porque se choca con este archivo "test_corporate"

@@ -1,0 +1,11 @@
+python singletonproxyobservertpfi.py -p 8080 -v
+
+python observerclient.py -s localhost -p 8080 -o notificaciones.json -v
+
+python singletonclient.py -i list.json -o salida_list.json -v
+
+python singletonclient.py -i get.json -o salida_get.json -v
+
+python singletonclient.py -i set.json -o salida_set.json -v
+
+pytest -v
